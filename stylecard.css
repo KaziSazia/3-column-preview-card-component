@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root{
+     /* Colors */
+
+        /* Primary */
+
+       --Bright-orange: hsl(31, 77%, 52%);
+        --Dark-cyan: hsl(184, 100%, 22%);
+        --Very-dark-cyan: hsl(179, 100%, 13%);
+
+        /* Neutral */
+                /* paragraphs  */
+        --Transparent-white: hsla(0, 0%, 100%, 0.75);
+        /* (background, headings, buttons) */
+        --Very-light-gray: hsl(0, 0%, 95%);
+
+  /* Font   */
+
+  font-size: 10px;
+  --font-lexenddeca:"Lexend Deca", sans-serif;
+  --font-bigshouldersdisplay: "Big Shoulders Display", sans-serif;
+  }
+
+  
+ /* Other Styles */
+
+  body {
+    font-family: var(--font-lexenddeca);
+    background-color: var(--Transparent-white);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+  }
+
+img {
+    max-width: 100%;
+ }
+
+  /* Declaring Font Size  */
+
+h2 {
+    font-size: 4.5rem;
+    line-height: 2rem;
+    color: var(--Transparent-white);
+    font-family: var(--font-bigshouldersdisplay);
+    font-weight: 900px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+ }
+
+
+  p {
+    font-size: 1.5rem;
+    color: var(--Transparent-white);
+    line-height: 2.5rem;
+    margin-top: 40px;
+    margin-bottom: 90px;
+  }
+  
+  /* End of Global Style  */
+
+
+.wrapper {
+    display: flex;
+    width: 900px;
+    }
+
+.card-01 {
+    background-color:hsl(31, 77%, 52%);
+    padding: 50px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+   
+
+.card-02 {
+    background-color:hsl(184, 100%, 22%);
+    padding: 40px;
+  
+}
+
+.card-03 {
+    background-color:hsl(179, 100%, 13%);
+    padding: 40px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+button {
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--font-lexenddeca);
+    transition: border 0.3s ease;
+    
+}
+
+button:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white; 
+}
+
+.btn01 {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn02{
+    color: hsl(184, 100%, 22%);
+}
+
+.btn03{
+    color: hsl(179, 100%, 13%);
+}
+
+/* media  */
+
+@media (max-width: 760px) {
+
+.wrapper{
+    flex-direction: column;
+    margin: 20px;
+}
+
+.card-01{
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+}
+
+.card-03{
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+}
+}
+
